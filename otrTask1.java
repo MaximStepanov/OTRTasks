@@ -34,8 +34,13 @@ public class otrTask1 extends Exception {
         String [] arr2 = new String[4];
         arr2 = destructurize(address2);
 
+        int n = Integer.parseInt(arr1[3]);
+        int m = Integer.parseInt(arr2[3]);
 
+        
 
+        for (int i = n+1; i<m; i++)
+            System.out.println(address1.substring(0, address1.lastIndexOf(".")) + "." + i);
 
     }
     /*
@@ -47,7 +52,6 @@ public class otrTask1 extends Exception {
         int n;
         for (int i=0; i<4; i++){
             n = address.indexOf(".", m);
-            //System.out.println("after " + i + " iteration n = " + n);
             if (n != -1)
                 arr[i] = address.substring(m, n);
             else
