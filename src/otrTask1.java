@@ -42,8 +42,7 @@ public class otrTask1 extends Exception {
         /*
         ------===== Main output loop =====------
                convert 10 -> 256 algorithm  
-               print   created IP address 
-        _________________________________________
+               print   created IP address
          */
         while (begin!=end){
 
